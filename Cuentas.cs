@@ -11,5 +11,7 @@ namespace ATM
         public int NumeroDeCuenta { get; set; }
         public int NumeroDeCliente { get; set; }
         public double Saldo { get; set; }
+        public string Usuario { get; set; }
+        public string Contraseña { get; set; }
     }
 }
