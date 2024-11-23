@@ -13,6 +13,7 @@ namespace ATM
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public int Telefono { get; set; }
+        public string Correo {  get; set; }
         public string Direccion { get; set; }
         public DateTime FechaNazi {  get; set; }
     }
