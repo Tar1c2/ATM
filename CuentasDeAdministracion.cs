@@ -62,9 +62,6 @@ namespace ATM
             Conexionalabase.Open();
             cmd.ExecuteNonQuery();
             Conexionalabase.Close();
-
-
-
         }
              
 
