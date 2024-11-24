@@ -51,10 +51,10 @@ namespace ATM
             cmd.ExecuteNonQuery();
             Conexionalabase.Close();
         }
-        public void Gerente_Asignar_Cuenta(Cuentas cuenta, Clientes cliente) {
+        public void Gerente_Asignar_Cuenta(Cuentas cuenta, int cliente) {
             SqlConnection Conexionalabase = new SqlConnection(Conectar.Conexion);
             SqlCommand cmd = new SqlCommand("INSERT INTO Info_Usuarios(Cliente_ID, Usuario, Password, Saldo, Numero_De_Cuenta) VALUES(@Cliente_ID, @Usuario, @Password, @Saldo, @Numero_De_Cuenta)", Conexionalabase);
-            cmd.Parameters.AddWithValue("@Cliente_ID", cliente.NumeroDeCliente);
+            cmd.Parameters.AddWithValue("@Cliente_ID", cliente);
             cmd.Parameters.AddWithValue("@Usuario", cuenta.Usuario);
             cmd.Parameters.AddWithValue("@Password", cuenta.Contraseña);
             cmd.Parameters.AddWithValue("@Saldo", cuenta.Saldo);
