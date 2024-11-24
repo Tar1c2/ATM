@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ATM
 {
-    public partial class Form_Gerente : Form
+    public partial class Form_Clientes : Form
     {
-        public Form_Gerente()
+        public Form_Clientes()
         {
             InitializeComponent();
         }

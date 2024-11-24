@@ -1,6 +1,6 @@
 ﻿namespace ATM
 {
-    partial class Form_Cajero_Manual
+    partial class Form_Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Form_Cajero_Manual
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form_Cajero_Manual";
-            this.Text = "Cajero";
-            this.ResumeLayout(false);
-
+            this.Text = "Form_Clientes";
         }
 
         #endregion

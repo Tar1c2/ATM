@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,5 +17,14 @@ namespace ATM
         public string Correo {  get; set; }
         public string Direccion { get; set; }
         public DateTime FechaNazi {  get; set; }
+        ConectarBase ConectarBase = new ConectarBase();
+
+        public void mostrar_clientes()
+        {
+            SqlConnection Conexion = new SqlConnection(ConectarBase.Conexion);
+            SqlCommand cmd = new SqlCommand("SELECT ", Conexion);
+
+        }
+        
     }
 }

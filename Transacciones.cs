@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ATM
 {
@@ -18,7 +19,8 @@ namespace ATM
 
         ConectarBase Conectar = new ConectarBase();
 
-        public void Transaccion(Transacciones Trans, Cuentas cuenta, Clientes cliente) {
+        public void Transaccion(Transacciones Trans, Cuentas cuenta, Clientes cliente)
+        {
             SqlConnection Conexionalabase = new SqlConnection(Conectar.Conexion);
             SqlCommand cmd = new SqlCommand("INSERT INTO Transacciones(Folio,NumeroCuenta,NumeroCliente,TipoTransaccion,Fecha,Monto) VALUES(@Folio, @NumeroCuenta, @NumeroCliente, @TipoTransaccion, @Fecha,@Monto)", Conexionalabase);
             cmd.Parameters.AddWithValue("@Folio", Trans.Folio);
@@ -30,5 +32,6 @@ namespace ATM
             cmd.ExecuteNonQuery();
             Conexionalabase.Close();
         }
+        
     }
 }

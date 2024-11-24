@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Form_Administracion_De_Permisos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "Form_Administracion_De_Permisos";
             this.Text = "Form_AdministracionDePermisos";
+            this.Load += new System.EventHandler(this.Form_Administracion_De_Permisos_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

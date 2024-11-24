@@ -15,6 +15,12 @@ namespace ATM
         public Form_Administracion_De_Permisos()
         {
             InitializeComponent();
+
+        }
+
+        private void Form_Administracion_De_Permisos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
