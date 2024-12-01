@@ -29,325 +29,422 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Gerente));
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cajeroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cajerosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trabajadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.LBL_FechaNaci_Cliente = new System.Windows.Forms.Label();
-            this.LBL_RFC = new System.Windows.Forms.Label();
-            this.LBL_Nombre_Cliente = new System.Windows.Forms.Label();
-            this.LBl_Registro_Cliente = new System.Windows.Forms.Label();
-            this.LBL_Apellidos_Clientes = new System.Windows.Forms.Label();
-            this.LBL_Direccion_Cliente = new System.Windows.Forms.Label();
-            this.LBl_Correo = new System.Windows.Forms.Label();
-            this.LBL_Telefono_Cliente = new System.Windows.Forms.Label();
-            this.TBX_Nombre_Cliente = new System.Windows.Forms.TextBox();
-            this.TBX_Apellidos_Cliente = new System.Windows.Forms.TextBox();
-            this.TBX_RFC = new System.Windows.Forms.TextBox();
-            this.TBX_FechaNaci_Cliente = new System.Windows.Forms.TextBox();
-            this.TBX_Direccion_Cliente = new System.Windows.Forms.TextBox();
-            this.TBX_Telefon_Cliente = new System.Windows.Forms.TextBox();
-            this.TBX_Correo_Cliente = new System.Windows.Forms.TextBox();
-            this.BTN_Agregar_Cliente = new System.Windows.Forms.Button();
-            this.GBX_Registrar = new System.Windows.Forms.GroupBox();
-            this.GBX_Asignar = new System.Windows.Forms.GroupBox();
-            this.LBL_IDCliente_Cuenta = new System.Windows.Forms.Label();
-            this.BTN_Asignar_Cuenta = new System.Windows.Forms.Button();
-            this.LBL_Contraseña_Cuenta = new System.Windows.Forms.Label();
-            this.LBL_Usuario_Cuenta = new System.Windows.Forms.Label();
-            this.LBL_Asignacion_Cuenta = new System.Windows.Forms.Label();
-            this.TBX_Contraseña_Cuenta = new System.Windows.Forms.TextBox();
-            this.TBX_Usuario_Cuenta = new System.Windows.Forms.TextBox();
-            this.TBX_CL_ID = new System.Windows.Forms.TextBox();
-            this.crearCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asignarCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.finalizar_btn = new System.Windows.Forms.Button();
+            this.nombre_lbl = new System.Windows.Forms.Label();
+            this.nombre_tbx = new System.Windows.Forms.TextBox();
+            this.apellidos_lbl = new System.Windows.Forms.Label();
+            this.apellidos_tbx = new System.Windows.Forms.TextBox();
+            this.usuario_lbl = new System.Windows.Forms.Label();
+            this.usuario_tbx = new System.Windows.Forms.TextBox();
+            this.contrasena_lbl = new System.Windows.Forms.Label();
+            this.contrasena_tbx = new System.Windows.Forms.TextBox();
+            this.titulo_lbl = new System.Windows.Forms.Label();
+            this.rfc_lbl = new System.Windows.Forms.Label();
+            this.clientes_dgv = new System.Windows.Forms.DataGridView();
+            this.trabajadores_lbl = new System.Windows.Forms.Label();
+            this.clientes_lbl = new System.Windows.Forms.Label();
+            this.nacimiento_lbl = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Correo_lbl = new System.Windows.Forms.Label();
+            this.correo_tbx = new System.Windows.Forms.TextBox();
+            this.rfc_tbx = new System.Windows.Forms.TextBox();
+            this.telefono_tbx = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Direccion_lbl = new System.Windows.Forms.Label();
+            this.direccion_tbx = new System.Windows.Forms.TextBox();
+            this.deposito_inicial_lbl = new System.Windows.Forms.Label();
+            this.depo_ini_tbx = new System.Windows.Forms.TextBox();
+            this.Administradores_dgv = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
-            this.GBX_Registrar.SuspendLayout();
-            this.GBX_Asignar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientes_dgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Administradores_dgv)).BeginInit();
             this.SuspendLayout();
+            // 
+            // agregarToolStripMenuItem
+            // 
+            this.agregarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cajeroToolStripMenuItem,
+            this.clienteToolStripMenuItem});
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.agregarToolStripMenuItem.Text = "Agregar";
+            // 
+            // cajeroToolStripMenuItem
+            // 
+            this.cajeroToolStripMenuItem.Name = "cajeroToolStripMenuItem";
+            this.cajeroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cajeroToolStripMenuItem.Text = "Cajero";
+            this.cajeroToolStripMenuItem.Click += new System.EventHandler(this.cajeroToolStripMenuItem_Click);
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eliminarToolStripMenuItem1,
+            this.cajerosToolStripMenuItem});
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            // 
+            // eliminarToolStripMenuItem1
+            // 
+            this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
+            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem1.Text = "Clientes";
+            this.eliminarToolStripMenuItem1.Click += new System.EventHandler(this.eliminarToolStripMenuItem1_Click);
+            // 
+            // cajerosToolStripMenuItem
+            // 
+            this.cajerosToolStripMenuItem.Name = "cajerosToolStripMenuItem";
+            this.cajerosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cajerosToolStripMenuItem.Text = "Cajeros";
+            // 
+            // verToolStripMenuItem
+            // 
+            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.trabajadoresToolStripMenuItem,
+            this.clientesToolStripMenuItem});
+            this.verToolStripMenuItem.Name = "verToolStripMenuItem";
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.verToolStripMenuItem.Text = "Ver";
+            // 
+            // trabajadoresToolStripMenuItem
+            // 
+            this.trabajadoresToolStripMenuItem.Name = "trabajadoresToolStripMenuItem";
+            this.trabajadoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.trabajadoresToolStripMenuItem.Text = "Trabajadores";
+            this.trabajadoresToolStripMenuItem.Click += new System.EventHandler(this.trabajadoresToolStripMenuItem_Click);
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem1});
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.salirToolStripMenuItem.Text = "Salir?";
+            // 
+            // salirToolStripMenuItem1
+            // 
+            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem1.Text = "Salir";
+            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearCuentaToolStripMenuItem,
-            this.asignarCuentaToolStripMenuItem});
+            this.agregarToolStripMenuItem,
+            this.eliminarToolStripMenuItem,
+            this.verToolStripMenuItem,
+            this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(749, 24);
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Size = new System.Drawing.Size(832, 24);
+            this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // LBL_FechaNaci_Cliente
+            // finalizar_btn
             // 
-            this.LBL_FechaNaci_Cliente.AutoSize = true;
-            this.LBL_FechaNaci_Cliente.Location = new System.Drawing.Point(24, 136);
-            this.LBL_FechaNaci_Cliente.Name = "LBL_FechaNaci_Cliente";
-            this.LBL_FechaNaci_Cliente.Size = new System.Drawing.Size(110, 13);
-            this.LBL_FechaNaci_Cliente.TabIndex = 1;
-            this.LBL_FechaNaci_Cliente.Text = "Fecha De Nacimiento";
+            this.finalizar_btn.Location = new System.Drawing.Point(269, 399);
+            this.finalizar_btn.Name = "finalizar_btn";
+            this.finalizar_btn.Size = new System.Drawing.Size(82, 41);
+            this.finalizar_btn.TabIndex = 16;
+            this.finalizar_btn.UseVisualStyleBackColor = true;
+            this.finalizar_btn.Visible = false;
+            this.finalizar_btn.Click += new System.EventHandler(this.finalizar_btn_Click);
             // 
-            // LBL_RFC
+            // nombre_lbl
             // 
-            this.LBL_RFC.AutoSize = true;
-            this.LBL_RFC.Location = new System.Drawing.Point(24, 110);
-            this.LBL_RFC.Name = "LBL_RFC";
-            this.LBL_RFC.Size = new System.Drawing.Size(28, 13);
-            this.LBL_RFC.TabIndex = 2;
-            this.LBL_RFC.Text = "RFC";
+            this.nombre_lbl.AutoSize = true;
+            this.nombre_lbl.Location = new System.Drawing.Point(13, 101);
+            this.nombre_lbl.Name = "nombre_lbl";
+            this.nombre_lbl.Size = new System.Drawing.Size(44, 13);
+            this.nombre_lbl.TabIndex = 17;
+            this.nombre_lbl.Text = "Nombre";
+            this.nombre_lbl.Visible = false;
             // 
-            // LBL_Nombre_Cliente
+            // nombre_tbx
             // 
-            this.LBL_Nombre_Cliente.AutoSize = true;
-            this.LBL_Nombre_Cliente.Location = new System.Drawing.Point(24, 58);
-            this.LBL_Nombre_Cliente.Name = "LBL_Nombre_Cliente";
-            this.LBL_Nombre_Cliente.Size = new System.Drawing.Size(44, 13);
-            this.LBL_Nombre_Cliente.TabIndex = 3;
-            this.LBL_Nombre_Cliente.Text = "Nombre";
+            this.nombre_tbx.Location = new System.Drawing.Point(16, 117);
+            this.nombre_tbx.Name = "nombre_tbx";
+            this.nombre_tbx.Size = new System.Drawing.Size(153, 20);
+            this.nombre_tbx.TabIndex = 18;
+            this.nombre_tbx.Visible = false;
             // 
-            // LBl_Registro_Cliente
+            // apellidos_lbl
             // 
-            this.LBl_Registro_Cliente.AutoSize = true;
-            this.LBl_Registro_Cliente.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBl_Registro_Cliente.Location = new System.Drawing.Point(68, 16);
-            this.LBl_Registro_Cliente.Name = "LBl_Registro_Cliente";
-            this.LBl_Registro_Cliente.Size = new System.Drawing.Size(170, 22);
-            this.LBl_Registro_Cliente.TabIndex = 4;
-            this.LBl_Registro_Cliente.Text = "Registro de clientes";
+            this.apellidos_lbl.AutoSize = true;
+            this.apellidos_lbl.Location = new System.Drawing.Point(196, 101);
+            this.apellidos_lbl.Name = "apellidos_lbl";
+            this.apellidos_lbl.Size = new System.Drawing.Size(49, 13);
+            this.apellidos_lbl.TabIndex = 19;
+            this.apellidos_lbl.Text = "Apellidos";
+            this.apellidos_lbl.Visible = false;
             // 
-            // LBL_Apellidos_Clientes
+            // apellidos_tbx
             // 
-            this.LBL_Apellidos_Clientes.AutoSize = true;
-            this.LBL_Apellidos_Clientes.Location = new System.Drawing.Point(24, 84);
-            this.LBL_Apellidos_Clientes.Name = "LBL_Apellidos_Clientes";
-            this.LBL_Apellidos_Clientes.Size = new System.Drawing.Size(49, 13);
-            this.LBL_Apellidos_Clientes.TabIndex = 5;
-            this.LBL_Apellidos_Clientes.Text = "Apellidos";
+            this.apellidos_tbx.Location = new System.Drawing.Point(199, 117);
+            this.apellidos_tbx.Name = "apellidos_tbx";
+            this.apellidos_tbx.Size = new System.Drawing.Size(153, 20);
+            this.apellidos_tbx.TabIndex = 20;
+            this.apellidos_tbx.Visible = false;
             // 
-            // LBL_Direccion_Cliente
+            // usuario_lbl
             // 
-            this.LBL_Direccion_Cliente.AutoSize = true;
-            this.LBL_Direccion_Cliente.Location = new System.Drawing.Point(24, 162);
-            this.LBL_Direccion_Cliente.Name = "LBL_Direccion_Cliente";
-            this.LBL_Direccion_Cliente.Size = new System.Drawing.Size(52, 13);
-            this.LBL_Direccion_Cliente.TabIndex = 6;
-            this.LBL_Direccion_Cliente.Text = "Dirección";
+            this.usuario_lbl.AutoSize = true;
+            this.usuario_lbl.Location = new System.Drawing.Point(13, 153);
+            this.usuario_lbl.Name = "usuario_lbl";
+            this.usuario_lbl.Size = new System.Drawing.Size(96, 13);
+            this.usuario_lbl.TabIndex = 21;
+            this.usuario_lbl.Text = "Nombre de usuario";
+            this.usuario_lbl.Visible = false;
             // 
-            // LBl_Correo
+            // usuario_tbx
             // 
-            this.LBl_Correo.AutoSize = true;
-            this.LBl_Correo.Location = new System.Drawing.Point(24, 214);
-            this.LBl_Correo.Name = "LBl_Correo";
-            this.LBl_Correo.Size = new System.Drawing.Size(38, 13);
-            this.LBl_Correo.TabIndex = 7;
-            this.LBl_Correo.Text = "Correo";
+            this.usuario_tbx.Location = new System.Drawing.Point(16, 169);
+            this.usuario_tbx.Name = "usuario_tbx";
+            this.usuario_tbx.Size = new System.Drawing.Size(153, 20);
+            this.usuario_tbx.TabIndex = 22;
+            this.usuario_tbx.Visible = false;
             // 
-            // LBL_Telefono_Cliente
+            // contrasena_lbl
             // 
-            this.LBL_Telefono_Cliente.AutoSize = true;
-            this.LBL_Telefono_Cliente.Location = new System.Drawing.Point(24, 188);
-            this.LBL_Telefono_Cliente.Name = "LBL_Telefono_Cliente";
-            this.LBL_Telefono_Cliente.Size = new System.Drawing.Size(49, 13);
-            this.LBL_Telefono_Cliente.TabIndex = 8;
-            this.LBL_Telefono_Cliente.Text = "Telefono";
+            this.contrasena_lbl.AutoSize = true;
+            this.contrasena_lbl.Location = new System.Drawing.Point(196, 153);
+            this.contrasena_lbl.Name = "contrasena_lbl";
+            this.contrasena_lbl.Size = new System.Drawing.Size(56, 13);
+            this.contrasena_lbl.TabIndex = 23;
+            this.contrasena_lbl.Text = "Contraeña";
+            this.contrasena_lbl.Visible = false;
             // 
-            // TBX_Nombre_Cliente
+            // contrasena_tbx
             // 
-            this.TBX_Nombre_Cliente.Location = new System.Drawing.Point(140, 58);
-            this.TBX_Nombre_Cliente.Name = "TBX_Nombre_Cliente";
-            this.TBX_Nombre_Cliente.Size = new System.Drawing.Size(146, 20);
-            this.TBX_Nombre_Cliente.TabIndex = 10;
+            this.contrasena_tbx.Location = new System.Drawing.Point(199, 169);
+            this.contrasena_tbx.Name = "contrasena_tbx";
+            this.contrasena_tbx.Size = new System.Drawing.Size(153, 20);
+            this.contrasena_tbx.TabIndex = 24;
+            this.contrasena_tbx.Visible = false;
             // 
-            // TBX_Apellidos_Cliente
+            // titulo_lbl
             // 
-            this.TBX_Apellidos_Cliente.Location = new System.Drawing.Point(140, 84);
-            this.TBX_Apellidos_Cliente.Name = "TBX_Apellidos_Cliente";
-            this.TBX_Apellidos_Cliente.Size = new System.Drawing.Size(146, 20);
-            this.TBX_Apellidos_Cliente.TabIndex = 11;
+            this.titulo_lbl.AutoSize = true;
+            this.titulo_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titulo_lbl.Location = new System.Drawing.Point(12, 45);
+            this.titulo_lbl.Name = "titulo_lbl";
+            this.titulo_lbl.Size = new System.Drawing.Size(58, 26);
+            this.titulo_lbl.TabIndex = 25;
+            this.titulo_lbl.Text = "titulo";
             // 
-            // TBX_RFC
+            // rfc_lbl
             // 
-            this.TBX_RFC.Location = new System.Drawing.Point(140, 110);
-            this.TBX_RFC.Name = "TBX_RFC";
-            this.TBX_RFC.Size = new System.Drawing.Size(146, 20);
-            this.TBX_RFC.TabIndex = 12;
+            this.rfc_lbl.AutoSize = true;
+            this.rfc_lbl.Location = new System.Drawing.Point(14, 195);
+            this.rfc_lbl.Name = "rfc_lbl";
+            this.rfc_lbl.Size = new System.Drawing.Size(28, 13);
+            this.rfc_lbl.TabIndex = 41;
+            this.rfc_lbl.Text = "RFC";
+            this.rfc_lbl.Visible = false;
             // 
-            // TBX_FechaNaci_Cliente
+            // clientes_dgv
             // 
-            this.TBX_FechaNaci_Cliente.Location = new System.Drawing.Point(140, 136);
-            this.TBX_FechaNaci_Cliente.Name = "TBX_FechaNaci_Cliente";
-            this.TBX_FechaNaci_Cliente.Size = new System.Drawing.Size(146, 20);
-            this.TBX_FechaNaci_Cliente.TabIndex = 13;
+            this.clientes_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.clientes_dgv.Location = new System.Drawing.Point(370, 283);
+            this.clientes_dgv.Name = "clientes_dgv";
+            this.clientes_dgv.Size = new System.Drawing.Size(418, 157);
+            this.clientes_dgv.TabIndex = 27;
+            this.clientes_dgv.Visible = false;
             // 
-            // TBX_Direccion_Cliente
+            // trabajadores_lbl
             // 
-            this.TBX_Direccion_Cliente.Location = new System.Drawing.Point(140, 162);
-            this.TBX_Direccion_Cliente.Name = "TBX_Direccion_Cliente";
-            this.TBX_Direccion_Cliente.Size = new System.Drawing.Size(146, 20);
-            this.TBX_Direccion_Cliente.TabIndex = 14;
+            this.trabajadores_lbl.AutoSize = true;
+            this.trabajadores_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trabajadores_lbl.Location = new System.Drawing.Point(366, 56);
+            this.trabajadores_lbl.Name = "trabajadores_lbl";
+            this.trabajadores_lbl.Size = new System.Drawing.Size(102, 20);
+            this.trabajadores_lbl.TabIndex = 28;
+            this.trabajadores_lbl.Text = "Trabajadores";
             // 
-            // TBX_Telefon_Cliente
+            // clientes_lbl
             // 
-            this.TBX_Telefon_Cliente.Location = new System.Drawing.Point(140, 188);
-            this.TBX_Telefon_Cliente.Name = "TBX_Telefon_Cliente";
-            this.TBX_Telefon_Cliente.Size = new System.Drawing.Size(146, 20);
-            this.TBX_Telefon_Cliente.TabIndex = 15;
+            this.clientes_lbl.AutoSize = true;
+            this.clientes_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientes_lbl.Location = new System.Drawing.Point(366, 260);
+            this.clientes_lbl.Name = "clientes_lbl";
+            this.clientes_lbl.Size = new System.Drawing.Size(66, 20);
+            this.clientes_lbl.TabIndex = 29;
+            this.clientes_lbl.Text = "Clientes";
             // 
-            // TBX_Correo_Cliente
+            // nacimiento_lbl
             // 
-            this.TBX_Correo_Cliente.Location = new System.Drawing.Point(140, 214);
-            this.TBX_Correo_Cliente.Name = "TBX_Correo_Cliente";
-            this.TBX_Correo_Cliente.Size = new System.Drawing.Size(146, 20);
-            this.TBX_Correo_Cliente.TabIndex = 16;
+            this.nacimiento_lbl.AutoSize = true;
+            this.nacimiento_lbl.Location = new System.Drawing.Point(196, 195);
+            this.nacimiento_lbl.Name = "nacimiento_lbl";
+            this.nacimiento_lbl.Size = new System.Drawing.Size(108, 13);
+            this.nacimiento_lbl.TabIndex = 30;
+            this.nacimiento_lbl.Text = "Fecha de Nacimiento";
+            this.nacimiento_lbl.Visible = false;
             // 
-            // BTN_Agregar_Cliente
+            // label3
             // 
-            this.BTN_Agregar_Cliente.Location = new System.Drawing.Point(124, 263);
-            this.BTN_Agregar_Cliente.Name = "BTN_Agregar_Cliente";
-            this.BTN_Agregar_Cliente.Size = new System.Drawing.Size(75, 23);
-            this.BTN_Agregar_Cliente.TabIndex = 17;
-            this.BTN_Agregar_Cliente.Text = "Agregar";
-            this.BTN_Agregar_Cliente.UseVisualStyleBackColor = true;
-            this.BTN_Agregar_Cliente.Click += new System.EventHandler(this.Registrar_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 246);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Telefono";
+            this.label3.Visible = false;
             // 
-            // GBX_Registrar
+            // Correo_lbl
             // 
-            this.GBX_Registrar.Controls.Add(this.LBL_Nombre_Cliente);
-            this.GBX_Registrar.Controls.Add(this.BTN_Agregar_Cliente);
-            this.GBX_Registrar.Controls.Add(this.LBL_FechaNaci_Cliente);
-            this.GBX_Registrar.Controls.Add(this.TBX_Correo_Cliente);
-            this.GBX_Registrar.Controls.Add(this.LBL_RFC);
-            this.GBX_Registrar.Controls.Add(this.TBX_Telefon_Cliente);
-            this.GBX_Registrar.Controls.Add(this.LBl_Registro_Cliente);
-            this.GBX_Registrar.Controls.Add(this.TBX_Direccion_Cliente);
-            this.GBX_Registrar.Controls.Add(this.LBL_Apellidos_Clientes);
-            this.GBX_Registrar.Controls.Add(this.TBX_FechaNaci_Cliente);
-            this.GBX_Registrar.Controls.Add(this.LBL_Direccion_Cliente);
-            this.GBX_Registrar.Controls.Add(this.TBX_RFC);
-            this.GBX_Registrar.Controls.Add(this.LBl_Correo);
-            this.GBX_Registrar.Controls.Add(this.TBX_Apellidos_Cliente);
-            this.GBX_Registrar.Controls.Add(this.LBL_Telefono_Cliente);
-            this.GBX_Registrar.Controls.Add(this.TBX_Nombre_Cliente);
-            this.GBX_Registrar.Location = new System.Drawing.Point(0, 27);
-            this.GBX_Registrar.Name = "GBX_Registrar";
-            this.GBX_Registrar.Size = new System.Drawing.Size(317, 292);
-            this.GBX_Registrar.TabIndex = 18;
-            this.GBX_Registrar.TabStop = false;
+            this.Correo_lbl.AutoSize = true;
+            this.Correo_lbl.Location = new System.Drawing.Point(196, 246);
+            this.Correo_lbl.Name = "Correo_lbl";
+            this.Correo_lbl.Size = new System.Drawing.Size(38, 13);
+            this.Correo_lbl.TabIndex = 32;
+            this.Correo_lbl.Text = "Correo";
+            this.Correo_lbl.Visible = false;
             // 
-            // GBX_Asignar
+            // correo_tbx
             // 
-            this.GBX_Asignar.Controls.Add(this.LBL_IDCliente_Cuenta);
-            this.GBX_Asignar.Controls.Add(this.BTN_Asignar_Cuenta);
-            this.GBX_Asignar.Controls.Add(this.LBL_Contraseña_Cuenta);
-            this.GBX_Asignar.Controls.Add(this.LBL_Usuario_Cuenta);
-            this.GBX_Asignar.Controls.Add(this.LBL_Asignacion_Cuenta);
-            this.GBX_Asignar.Controls.Add(this.TBX_Contraseña_Cuenta);
-            this.GBX_Asignar.Controls.Add(this.TBX_Usuario_Cuenta);
-            this.GBX_Asignar.Controls.Add(this.TBX_CL_ID);
-            this.GBX_Asignar.Location = new System.Drawing.Point(333, 27);
-            this.GBX_Asignar.Name = "GBX_Asignar";
-            this.GBX_Asignar.Size = new System.Drawing.Size(317, 292);
-            this.GBX_Asignar.TabIndex = 19;
-            this.GBX_Asignar.TabStop = false;
+            this.correo_tbx.Location = new System.Drawing.Point(198, 262);
+            this.correo_tbx.Name = "correo_tbx";
+            this.correo_tbx.Size = new System.Drawing.Size(153, 20);
+            this.correo_tbx.TabIndex = 33;
+            this.correo_tbx.Visible = false;
             // 
-            // LBL_IDCliente_Cuenta
+            // rfc_tbx
             // 
-            this.LBL_IDCliente_Cuenta.AutoSize = true;
-            this.LBL_IDCliente_Cuenta.Location = new System.Drawing.Point(20, 58);
-            this.LBL_IDCliente_Cuenta.Name = "LBL_IDCliente_Cuenta";
-            this.LBL_IDCliente_Cuenta.Size = new System.Drawing.Size(69, 13);
-            this.LBL_IDCliente_Cuenta.TabIndex = 3;
-            this.LBL_IDCliente_Cuenta.Text = "ID del cliente";
+            this.rfc_tbx.Location = new System.Drawing.Point(17, 211);
+            this.rfc_tbx.Name = "rfc_tbx";
+            this.rfc_tbx.Size = new System.Drawing.Size(153, 20);
+            this.rfc_tbx.TabIndex = 34;
+            this.rfc_tbx.Visible = false;
             // 
-            // BTN_Asignar_Cuenta
+            // telefono_tbx
             // 
-            this.BTN_Asignar_Cuenta.Location = new System.Drawing.Point(121, 259);
-            this.BTN_Asignar_Cuenta.Name = "BTN_Asignar_Cuenta";
-            this.BTN_Asignar_Cuenta.Size = new System.Drawing.Size(75, 23);
-            this.BTN_Asignar_Cuenta.TabIndex = 17;
-            this.BTN_Asignar_Cuenta.Text = "Asignar";
-            this.BTN_Asignar_Cuenta.UseVisualStyleBackColor = true;
-            this.BTN_Asignar_Cuenta.Click += new System.EventHandler(this.Asignar_Click);
+            this.telefono_tbx.Location = new System.Drawing.Point(16, 262);
+            this.telefono_tbx.Name = "telefono_tbx";
+            this.telefono_tbx.Size = new System.Drawing.Size(153, 20);
+            this.telefono_tbx.TabIndex = 35;
+            this.telefono_tbx.Visible = false;
             // 
-            // LBL_Contraseña_Cuenta
+            // dateTimePicker1
             // 
-            this.LBL_Contraseña_Cuenta.AutoSize = true;
-            this.LBL_Contraseña_Cuenta.Location = new System.Drawing.Point(20, 110);
-            this.LBL_Contraseña_Cuenta.Name = "LBL_Contraseña_Cuenta";
-            this.LBL_Contraseña_Cuenta.Size = new System.Drawing.Size(61, 13);
-            this.LBL_Contraseña_Cuenta.TabIndex = 1;
-            this.LBL_Contraseña_Cuenta.Text = "Contraseña";
+            this.dateTimePicker1.Location = new System.Drawing.Point(198, 211);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(152, 20);
+            this.dateTimePicker1.TabIndex = 36;
+            this.dateTimePicker1.Visible = false;
             // 
-            // LBL_Usuario_Cuenta
+            // Direccion_lbl
             // 
-            this.LBL_Usuario_Cuenta.AutoSize = true;
-            this.LBL_Usuario_Cuenta.Location = new System.Drawing.Point(20, 84);
-            this.LBL_Usuario_Cuenta.Name = "LBL_Usuario_Cuenta";
-            this.LBL_Usuario_Cuenta.Size = new System.Drawing.Size(43, 13);
-            this.LBL_Usuario_Cuenta.TabIndex = 2;
-            this.LBL_Usuario_Cuenta.Text = "Usuario";
+            this.Direccion_lbl.AutoSize = true;
+            this.Direccion_lbl.Location = new System.Drawing.Point(14, 295);
+            this.Direccion_lbl.Name = "Direccion_lbl";
+            this.Direccion_lbl.Size = new System.Drawing.Size(52, 13);
+            this.Direccion_lbl.TabIndex = 37;
+            this.Direccion_lbl.Text = "Direccion";
+            this.Direccion_lbl.Visible = false;
             // 
-            // LBL_Asignacion_Cuenta
+            // direccion_tbx
             // 
-            this.LBL_Asignacion_Cuenta.AutoSize = true;
-            this.LBL_Asignacion_Cuenta.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Asignacion_Cuenta.Location = new System.Drawing.Point(83, 16);
-            this.LBL_Asignacion_Cuenta.Name = "LBL_Asignacion_Cuenta";
-            this.LBL_Asignacion_Cuenta.Size = new System.Drawing.Size(138, 22);
-            this.LBL_Asignacion_Cuenta.TabIndex = 4;
-            this.LBL_Asignacion_Cuenta.Text = "Asignar Cuenta";
+            this.direccion_tbx.Location = new System.Drawing.Point(17, 311);
+            this.direccion_tbx.Name = "direccion_tbx";
+            this.direccion_tbx.Size = new System.Drawing.Size(153, 20);
+            this.direccion_tbx.TabIndex = 38;
+            this.direccion_tbx.Visible = false;
             // 
-            // TBX_Contraseña_Cuenta
+            // deposito_inicial_lbl
             // 
-            this.TBX_Contraseña_Cuenta.Location = new System.Drawing.Point(136, 110);
-            this.TBX_Contraseña_Cuenta.Name = "TBX_Contraseña_Cuenta";
-            this.TBX_Contraseña_Cuenta.Size = new System.Drawing.Size(146, 20);
-            this.TBX_Contraseña_Cuenta.TabIndex = 13;
+            this.deposito_inicial_lbl.AutoSize = true;
+            this.deposito_inicial_lbl.Location = new System.Drawing.Point(196, 295);
+            this.deposito_inicial_lbl.Name = "deposito_inicial_lbl";
+            this.deposito_inicial_lbl.Size = new System.Drawing.Size(79, 13);
+            this.deposito_inicial_lbl.TabIndex = 39;
+            this.deposito_inicial_lbl.Text = "Deposito Inicial";
+            this.deposito_inicial_lbl.Visible = false;
             // 
-            // TBX_Usuario_Cuenta
+            // depo_ini_tbx
             // 
-            this.TBX_Usuario_Cuenta.Location = new System.Drawing.Point(136, 84);
-            this.TBX_Usuario_Cuenta.Name = "TBX_Usuario_Cuenta";
-            this.TBX_Usuario_Cuenta.Size = new System.Drawing.Size(146, 20);
-            this.TBX_Usuario_Cuenta.TabIndex = 12;
+            this.depo_ini_tbx.Location = new System.Drawing.Point(197, 311);
+            this.depo_ini_tbx.Name = "depo_ini_tbx";
+            this.depo_ini_tbx.Size = new System.Drawing.Size(153, 20);
+            this.depo_ini_tbx.TabIndex = 40;
+            this.depo_ini_tbx.Visible = false;
             // 
-            // TBX_CL_ID
+            // Administradores_dgv
             // 
-            this.TBX_CL_ID.Location = new System.Drawing.Point(136, 58);
-            this.TBX_CL_ID.Name = "TBX_CL_ID";
-            this.TBX_CL_ID.Size = new System.Drawing.Size(146, 20);
-            this.TBX_CL_ID.TabIndex = 11;
-            // 
-            // crearCuentaToolStripMenuItem
-            // 
-            this.crearCuentaToolStripMenuItem.Name = "crearCuentaToolStripMenuItem";
-            this.crearCuentaToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
-            this.crearCuentaToolStripMenuItem.Text = "Registrar Cliente";
-            this.crearCuentaToolStripMenuItem.Click += new System.EventHandler(this.Menu_Resgistra_Click);
-            // 
-            // asignarCuentaToolStripMenuItem
-            // 
-            this.asignarCuentaToolStripMenuItem.Name = "asignarCuentaToolStripMenuItem";
-            this.asignarCuentaToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.asignarCuentaToolStripMenuItem.Text = "Crear Cuenta";
-            this.asignarCuentaToolStripMenuItem.Click += new System.EventHandler(this.Menu_Asignar_Click);
+            this.Administradores_dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Administradores_dgv.Location = new System.Drawing.Point(370, 79);
+            this.Administradores_dgv.Name = "Administradores_dgv";
+            this.Administradores_dgv.Size = new System.Drawing.Size(418, 152);
+            this.Administradores_dgv.TabIndex = 26;
+            this.Administradores_dgv.Visible = false;
             // 
             // Form_Gerente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 323);
-            this.Controls.Add(this.GBX_Asignar);
-            this.Controls.Add(this.GBX_Registrar);
+            this.ClientSize = new System.Drawing.Size(832, 450);
+            this.Controls.Add(this.rfc_lbl);
+            this.Controls.Add(this.depo_ini_tbx);
+            this.Controls.Add(this.deposito_inicial_lbl);
+            this.Controls.Add(this.direccion_tbx);
+            this.Controls.Add(this.Direccion_lbl);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.telefono_tbx);
+            this.Controls.Add(this.rfc_tbx);
+            this.Controls.Add(this.correo_tbx);
+            this.Controls.Add(this.Correo_lbl);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.nacimiento_lbl);
+            this.Controls.Add(this.clientes_lbl);
+            this.Controls.Add(this.trabajadores_lbl);
+            this.Controls.Add(this.clientes_dgv);
+            this.Controls.Add(this.Administradores_dgv);
+            this.Controls.Add(this.titulo_lbl);
+            this.Controls.Add(this.contrasena_tbx);
+            this.Controls.Add(this.contrasena_lbl);
+            this.Controls.Add(this.usuario_tbx);
+            this.Controls.Add(this.usuario_lbl);
+            this.Controls.Add(this.apellidos_tbx);
+            this.Controls.Add(this.apellidos_lbl);
+            this.Controls.Add(this.nombre_tbx);
+            this.Controls.Add(this.nombre_lbl);
+            this.Controls.Add(this.finalizar_btn);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form_Gerente";
-            this.Text = "Administrador de cuentas";
-            this.Load += new System.EventHandler(this.Form_Gerente_Load);
+            this.Text = "Gerente";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.GBX_Registrar.ResumeLayout(false);
-            this.GBX_Registrar.PerformLayout();
-            this.GBX_Asignar.ResumeLayout(false);
-            this.GBX_Asignar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientes_dgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Administradores_dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,34 +452,43 @@
 
         #endregion
 
+        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cajeroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem cajerosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem trabajadoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Label LBL_FechaNaci_Cliente;
-        private System.Windows.Forms.Label LBL_RFC;
-        private System.Windows.Forms.Label LBL_Nombre_Cliente;
-        private System.Windows.Forms.Label LBl_Registro_Cliente;
-        private System.Windows.Forms.Label LBL_Apellidos_Clientes;
-        private System.Windows.Forms.Label LBL_Direccion_Cliente;
-        private System.Windows.Forms.Label LBl_Correo;
-        private System.Windows.Forms.Label LBL_Telefono_Cliente;
-        private System.Windows.Forms.TextBox TBX_Nombre_Cliente;
-        private System.Windows.Forms.TextBox TBX_Apellidos_Cliente;
-        private System.Windows.Forms.TextBox TBX_RFC;
-        private System.Windows.Forms.TextBox TBX_FechaNaci_Cliente;
-        private System.Windows.Forms.TextBox TBX_Direccion_Cliente;
-        private System.Windows.Forms.TextBox TBX_Telefon_Cliente;
-        private System.Windows.Forms.TextBox TBX_Correo_Cliente;
-        private System.Windows.Forms.Button BTN_Agregar_Cliente;
-        private System.Windows.Forms.GroupBox GBX_Registrar;
-        private System.Windows.Forms.GroupBox GBX_Asignar;
-        private System.Windows.Forms.Label LBL_IDCliente_Cuenta;
-        private System.Windows.Forms.Button BTN_Asignar_Cuenta;
-        private System.Windows.Forms.Label LBL_Contraseña_Cuenta;
-        private System.Windows.Forms.Label LBL_Usuario_Cuenta;
-        private System.Windows.Forms.Label LBL_Asignacion_Cuenta;
-        private System.Windows.Forms.TextBox TBX_Contraseña_Cuenta;
-        private System.Windows.Forms.TextBox TBX_Usuario_Cuenta;
-        private System.Windows.Forms.TextBox TBX_CL_ID;
-        private System.Windows.Forms.ToolStripMenuItem crearCuentaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem asignarCuentaToolStripMenuItem;
+        private System.Windows.Forms.Button finalizar_btn;
+        private System.Windows.Forms.Label nombre_lbl;
+        private System.Windows.Forms.TextBox nombre_tbx;
+        private System.Windows.Forms.Label apellidos_lbl;
+        private System.Windows.Forms.TextBox apellidos_tbx;
+        private System.Windows.Forms.Label usuario_lbl;
+        private System.Windows.Forms.TextBox usuario_tbx;
+        private System.Windows.Forms.Label contrasena_lbl;
+        private System.Windows.Forms.TextBox contrasena_tbx;
+        private System.Windows.Forms.Label titulo_lbl;
+        private System.Windows.Forms.Label rfc_lbl;
+        private System.Windows.Forms.DataGridView clientes_dgv;
+        private System.Windows.Forms.Label trabajadores_lbl;
+        private System.Windows.Forms.Label clientes_lbl;
+        private System.Windows.Forms.Label nacimiento_lbl;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Correo_lbl;
+        private System.Windows.Forms.TextBox correo_tbx;
+        private System.Windows.Forms.TextBox rfc_tbx;
+        private System.Windows.Forms.TextBox telefono_tbx;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label Direccion_lbl;
+        private System.Windows.Forms.TextBox direccion_tbx;
+        private System.Windows.Forms.Label deposito_inicial_lbl;
+        private System.Windows.Forms.TextBox depo_ini_tbx;
+        private System.Windows.Forms.DataGridView Administradores_dgv;
     }
 }
